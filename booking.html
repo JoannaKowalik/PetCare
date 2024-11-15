@@ -141,7 +141,62 @@
         <label class="form-check-label" for="donegal">Donegal</label>
       </div>
 
-      <!-- Date and time pick -->
+      <!-- Date pick -->
+
+      <!-- Time pick  -->
+      <h3>Pick time:</h3>
+
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="picktime" id="9AM" />
+        <label class="form-check-label" for="9AM"> 9 AM - 11 AM </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="picktime"
+          id="12AM"
+          checked
+        />
+        <label class="form-check-label" for="12AM"> 11 AM - 3 PM </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="picktime" id="3PM" />
+        <label class="form-check-label" for="3PM"> 3 PM - 6 PM </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="picktime"
+          id="6PM"
+          checked
+        />
+        <label class="form-check-label" for="6PM"> 6 PM - 9 PM </label>
+      </div>
+
+      <!-- Details input -->
+
+      <h3>Your details:</h3>
+      <form class="form-floating" id="details">
+        <input type="text" class="form-control" id="firstname" />
+        <label for="floatingInputValue">Your first name</label>
+      </form>
+      <form class="form-floating">
+        <input type="text" class="form-control" id="lastname" />
+        <label for="floatingInputValue">Your last name</label>
+      </form>
+      <form class="form-floating">
+        <input type="tel" class="form-control" id="phone" />
+        <label for="floatingInputValue">Your phone number</label>
+      </form>
+      <form class="form-floating">
+        <input type="email" class="form-control" id="email" />
+        <label for="floatingInputValue">Your E-mail</label>
+      </form>
+      <button class="btn btn-secondary" type="submit" form="details">
+        Submit
+      </button>
     </div>
   </body>
 </html>
