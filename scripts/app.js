@@ -7,10 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const navbarBrand = document.querySelector(".navbar-brand");
 
     burgerMenu.addEventListener("click", function() {
-      // Тогл класу для відображення бургер-меню
       navbarMenu.classList.toggle("active");
       
-      // Тогл класу для видалення видимості всіх інших елементів
       content.classList.toggle("hidden");
       footer.classList.toggle("hidden");
       navbarContainer.classList.toggle("hidden");
