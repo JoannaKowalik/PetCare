@@ -1,0 +1,405 @@
+@import url('style.css');
+
+.preview-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--blue-color);
+    color: var(--text-color-light);
+    position: relative;
+    overflow: hidden;
+}
+.preview-first-block {
+    padding: 6em 10%;
+    z-index: 1;
+}
+.preview-second-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+.preview-second-block img {
+    position: absolute; 
+    top: 65%; 
+    right: 10%; 
+    transform: translateY(-60%); 
+    z-index: 0; 
+}
+.preview-container button {
+    background-color: var(--blue-button-color);
+    width: 14em;
+    height: 4em;
+    border-radius: 50px;
+    border: none;
+    margin-top: 2.4em;
+}
+.preview-container a {
+    text-decoration: none;
+    color: var(--text-color-light);
+    font-size: 20px;
+    font-family: 'MyriadWebPro-Bold';
+}
+.preview-container p {
+    font-size: 24px;
+    font-family: 'Myriad Web Pro';
+}
+.preview-container h1 {
+    font-size: 64px;
+    font-family: 'MyriadWebPro-Bold';
+}
+.preview-container h2 {
+    font-size: 32px;
+    font-family: 'MyriadWebPro-Bold';
+}
+
+.do-it-container {
+    display: flex;
+    padding: 40px 5%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.do-it-block {
+    display: flex;
+    justify-content: row;
+    gap: 2em;
+    align-items: center;
+}
+.do-it p {
+    font-family: 'Myriad Web Pro';
+}
+
+.whypawfect-container {
+    display: flex;
+    align-items: center;
+    background-color: var(--pink-color);
+    position: relative;
+    overflow: hidden;
+}
+.whypawfect-text-block {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 5%;
+    z-index: 1;
+}
+.whypawfect-main-text {
+    font-family: 'MyriadWebPro-Bold';
+    font-size: 64px;
+}
+.whypawfect-text-block-items {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 5%;
+}
+.whypawfect-text-block-description {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 60%;
+}
+.whypawfect-text-block-items h2 {
+    font-family: 'MyriadWebPro-Bold';
+    font-size: 40px;
+    color: var(--text-color-dark);
+}
+.whypawfect-text-block-items p {
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--text-color-dark);
+}
+.whypawfect-text-block-icon {
+    display: flex;
+    width: 5%;
+    justify-content: center;
+}
+.why-pawfect-image-block img {
+    position: absolute;
+    top: 55%;
+    right: 5%; 
+    transform: translateY(-60%); 
+    z-index: 0; 
+}
+.whypawfect-blocks {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.explore-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8em 5%;
+}
+.explore-first-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 8em;
+}
+.explore-first-block h2 {
+    font-size: 65px;
+}
+.explore-first-block p {
+    text-align: center;
+    max-width: 75%;
+    font-size: 30px;
+}
+
+.second-block-package {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 36px;
+    max-width: 380px;
+    background-color: var(--blue-color);
+    gap: 20px;
+    padding: 64px 74px;
+    color: var(--text-color-light);
+}
+.second-block-package img {
+    width: 40%;
+}
+.second-block-package button {
+    background-color: var(--yellow-color);
+    width: 12em;
+    height: 3em;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+}
+.second-block-package a {
+    text-decoration: none;
+    color: var(--text-color-light);
+    font-family: 'MyriadWebPro-Bold';
+}
+.explore-second-block h1,
+.explore-second-block li {
+    color: var(--text-color-light);
+}
+.carousel-inner {
+    max-width: 380px;
+}
+
+.overview-container {
+    background-image: url('/images/bg-img-overview.png');
+    display: flex;
+    flex-direction: column;
+    padding: 8em 5%;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+.overview-first-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.overview-first-block p {
+    max-width: 80em;
+    font-family: 'Myriad Web Pro';
+    font-size: 18px;
+}
+.overview-first-block h1 {
+    margin-bottom: 26px;
+    font-size: 64px;
+}
+.overview-first-block h2 {
+    margin-bottom: 16px;
+}
+.overview-second-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12em;
+}
+.overview-second-block h1 {
+    font-size: 64px;
+}
+.overview-second-block p {
+    font-size: 32px;
+}
+.second-block-circle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 14px solid var(--blue-color);
+    border-radius: 50%;
+    width: 360px;
+    height: 360px;
+}
+.overview-container p,
+.overview-container h2,
+.overview-container h1 {
+    color: var(--text-color-light);
+}
+.overview-container h2,
+.overview-container h1 {
+    font-family: 'MyriadWebPro-Bold';
+}
+
+.service-container {
+    background-color: var(--blue-color);
+    display: flex;
+    flex-direction: column;
+    padding: 60px 5%;
+}
+.service-first-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color-light);
+    text-align: center;
+}
+.service-first-block h1 {
+    font-family: 'MyriadWebPro-Bold';
+    font-size: 64px;
+}
+.service-first-block h2 {
+    font-family: 'MyriadWebPro-Bold';
+}
+.service-first-block p {
+    font-family: 'Myriad Web Pro';
+    font-size: 18px;
+    max-width: 80em;
+}
+.service-second-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 74px;
+    gap: 80px;
+}
+.service-second-block h1,
+.service-second-block h2 {
+    font-family: 'MyriadWebPro-Bold';
+}
+.service-second-block p {
+    font-family: 'Myriad Web Pro';
+}
+.contact-us-pawfect {
+    font-weight: bolder;
+    font-size: 24px;
+}
+.contact-us-info h1 {
+    color: var(--blue-color);
+}
+.second-block-items {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 40px 60px;
+    border-radius: 10px;
+    gap: 20px;
+    background-color: var(--text-color-light);
+}
+.contact-us-info {
+    margin-top: 30px;
+}
+@media (max-width: 992px) { 
+    .preview-second-block {
+        display: none;
+    }
+    .preview-text-first-block {
+        font-size: 32px;
+    }
+    .preview-container h1 {
+        font-size: 48px;
+    }
+    .preview-container h2 {
+        font-size: 28px;
+    }
+    .preview-container p {
+        font-size: 20px;
+    }
+
+    .do-it-container {
+        gap: 40px;
+    }
+
+    .why-pawfect-image-block {
+        display: none;
+    }
+    .whypawfect-text-block-items {
+        gap: 10px;
+    }
+    .whypawfect-text-block-items h2 {
+        font-size: 22px;
+    }
+    .whypawfect-text-block-items p {
+        font-size: 20px;
+    }
+    .whypawfect-main-text {
+        font-size: 48px;
+    }
+
+    .explore-first-block {
+        padding-bottom: 2em;
+    }
+    .explore-first-block h2 {
+        font-size: 42px;
+    }
+    .explore-first-block p {
+        font-size: 20px;
+    }
+    .carousel-inner {
+        max-width: 300px;
+        padding-bottom: 15px;
+    }
+
+    .overview-first-block h1 {
+        font-size: 48px;
+    }
+    .overview-first-block h2 {
+        font-size: 22px;
+    }
+    .overview-first-block p {
+        font-size: 16px;
+    }
+    .overview-second-block h1 {
+        font-size: 48px;
+    }
+    .overview-second-block p {
+        font-size: 20px;
+    }
+    .overview-second-block {
+        gap: 4em;
+    }
+    .second-block-package {
+        padding: 32px 36px;
+    }
+    .second-block-circle {
+        width: 240px;
+        height: 240px;
+        border: 8px solid var(--blue-color);
+    }
+
+    .service-first-block h1 {
+        font-size: 48px;
+    }
+    .service-first-block h2 {
+        font-size: 22px;
+    }
+    .service-first-block p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+}
