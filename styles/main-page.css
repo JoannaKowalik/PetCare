@@ -191,7 +191,7 @@
 }
 
 .overview-container {
-    background-image: url('/images/bg-img-overview.png');
+    background-image: url('petcare/images/bg-img-overview.png');
     display: flex;
     flex-direction: column;
     padding: 8em 5%;
