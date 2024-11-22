@@ -58,6 +58,10 @@
     padding: 40px 5%;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
+}
+.do-it-container p {
+    width: 200px;
 }
 .do-it-block {
     display: flex;
@@ -331,6 +335,8 @@
 
     .do-it-container {
         gap: 40px;
+        justify-content: center;
+
     }
 
     .why-pawfect-image-block {
@@ -343,20 +349,27 @@
         font-size: 22px;
     }
     .whypawfect-text-block-items p {
-        font-size: 20px;
+        font-size: 15px;
     }
     .whypawfect-main-text {
-        font-size: 48px;
+        font-size: 32px;
+    }
+    .whypawfect-blocks {
+        padding-left: 20px;
+    }
+    .whypawfect-text-block-description {
+        padding-left: 20px;
+        max-width: 80%;
     }
 
     .explore-first-block {
         padding-bottom: 2em;
     }
     .explore-first-block h2 {
-        font-size: 42px;
+        font-size: 32px;
     }
     .explore-first-block p {
-        font-size: 20px;
+        font-size: 15px;
     }
     .carousel-inner {
         max-width: 300px;
@@ -364,13 +377,13 @@
     }
 
     .overview-first-block h1 {
-        font-size: 48px;
+        font-size: 32px;
     }
     .overview-first-block h2 {
-        font-size: 22px;
+        font-size: 26px;
     }
     .overview-first-block p {
-        font-size: 16px;
+        font-size: 15px;
     }
     .overview-second-block h1 {
         font-size: 48px;
@@ -391,7 +404,7 @@
     }
 
     .service-first-block h1 {
-        font-size: 48px;
+        font-size: 32px;
     }
     .service-first-block h2 {
         font-size: 22px;
@@ -399,6 +412,16 @@
     .service-first-block p {
         font-size: 16px;
     }
+    .second-block-items {
+        padding: 20px 40px;
+    }
+    .second-block-items h1 {
+        font-size: 18px;
+    }
+    .second-block-items p {
+        font-size: 14px;
+    }
+    
 }
 
 @media (max-width: 768px) {
