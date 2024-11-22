@@ -54,14 +54,17 @@
 }
 
 .do-it-container {
-    display: flex;
     padding: 40px 5%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
 }
-.do-it-container p {
-    width: 200px;
+
+.do-it-block-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20%;
+
 }
 .do-it-block {
     display: flex;
@@ -224,7 +227,7 @@
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    gap: 12em;
+    gap: 20%;
 }
 .overview-second-block h1 {
     font-size: 64px;
@@ -333,10 +336,21 @@
         font-size: 20px;
     }
 
-    .do-it-container {
-        gap: 40px;
-        justify-content: center;
 
+    .do-it-block-container {
+        display: flex;
+        justify-content: space-around;
+    }
+    .do-it-block {
+        max-width: 300px; /* Обмеження ширини для кожного блоку */
+        width: 100%;
+        text-align: start;
+    }
+    .do-it-block img {
+        width: 50px ;
+    }
+    .do-it-block-text {
+        width: 200px;
     }
 
     .why-pawfect-image-block {
