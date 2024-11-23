@@ -1,3 +1,199 @@
+:root {
+  --text-color-dark: #2f2f2f;
+  --text-color-light: #ffffff;
+  --blue-color: #41f8e4;
+  --yellow-color: #fcc500;
+  --pink-color: #fb9a99;
+  --blue-button-color: #00dfca;
+}
+
+/* Basic body styles */
+body {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  box-sizing: border-box; /* Include padding and border in size */
+  line-height: 1.6; /* Improve readability */
+  color: #333; /* Dark gray text */
+  background-color: #f9f9f9; /* Light background */
+  -webkit-font-smoothing: antialiased; /* Smooth fonts */
+  -moz-osx-font-smoothing: grayscale; /* Smooth fonts (macOS) */
+}
+
+/* Apply box-sizing to all elements */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "Myriad Web Pro";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Web Pro"),
+    url("../fonts/myriad-web-pro.woff") format("woff");
+}
+
+@font-face {
+  font-family: "MyriadWebPro-Bold";
+  font-style: normal;
+  font-weight: bold;
+  src: local("MyriadWebPro-Bold"),
+    url("../fonts/myriadwebpro-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "MyriadWebPro-CondensedItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("MyriadWebPro-CondensedItalic"),
+    url("../fonts/myriadwebpro-condenseditalic.woff") format("woff");
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  box-sizing: border-box;
+}
+.hidden {
+  display: none;
+}
+.navbar {
+  height: 10em;
+}
+.navbar-toggler {
+  margin-left: auto;
+}
+.navbar-nav {
+  align-items: center;
+  padding-right: 5%;
+}
+.nav-item {
+  margin-right: 12px;
+}
+.nav-item:last-child {
+  padding-right: 0;
+}
+.nav-link {
+  font-family: "Myriad Web Pro";
+  font-size: 20px;
+}
+.nav-link-last-item {
+  font-family: "MyriadWebPro-Bold";
+  font-size: 26px;
+  color: var(--text-color-light);
+  background-color: var(--yellow-color);
+  border-radius: 50px;
+  border: none;
+  width: 8em;
+  height: 2.2em;
+}
+.navbar-brand {
+  padding-left: 5%;
+}
+.brand-part1 {
+  font-family: "MyriadWebPro-Bold";
+}
+.brand-part2 {
+  font-family: "Myriad Web Pro";
+}
+
+.footer {
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--text-color-dark);
+  width: 100%;
+  padding: 40px 5%;
+  gap: 20%;
+}
+.footer a {
+  display: block;
+  text-decoration: none;
+  color: var(--text-color-light);
+  font-family: "Myriad Web Pro";
+  margin-bottom: 8px;
+}
+.three-blocks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5%;
+  width: 100%;
+  margin-top: 20px;
+}
+.three-blocks p {
+  color: var(--text-color-light);
+  font-size: 30px;
+}
+.logo-social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 5%;
+  gap: 40px;
+}
+.social-media {
+  display: flex;
+  gap: 1.8em;
+}
+.social-media a {
+}
+.about-block {
+  display: flex;
+  flex-direction: column;
+}
+.services-block {
+  display: flex;
+  flex-direction: column;
+}
+.other-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-block,
+.services-block,
+.other-block {
+  flex: 1 1 20%;
+  width: 130px;
+}
+@media (max-width: 1140px) {
+  .nav-link {
+    font-family: "Myriad Web Pro";
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .nav-item {
+    margin-right: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .logo-social-media {
+    flex-direction: row;
+    gap: 100px;
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+  .three-blocks {
+    flex-direction: column;
+  }
+  .social-media img {
+    width: 34px;
+  }
+}
+@media (max-width: 575.98px) {
+  .logo-social-media {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
 .input-group-append {
   cursor: pointer;
 }

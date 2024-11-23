@@ -1,0 +1,93 @@
+@import url('style.css');
+
+.contact-us-preview {
+    display: flex;
+    padding: 5% 5%;
+    justify-content: center;
+    background-image: url('/images/bg-img-overview.png');
+    background-size: cover; 
+    background-position: center; 
+    top: 40%;
+    background-repeat: no-repeat; 
+}
+.contact-us-preview h1 {
+    font-family: 'MyriadWebPro-Bold';
+    color: var(--text-color-light);
+}
+.form-main-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 120px 5%;
+}
+.form-item-container {
+    width: 400px;
+}
+.form-secondary-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.form-secondary-container:last-child {
+    align-items: center;
+}
+.form-control {
+    box-shadow: 0px 0px 5px;
+}
+.form-label {
+    padding-bottom: 5px;
+}
+.form-button button {
+    color: var(--text-color-light);
+    font-family: 'MyriadWebPro-Bold';
+    background-color: var(--blue-button-color);
+    width: 14em;
+    height: 4em;
+    border-radius: 50px;
+    border: none;
+    margin-top: 2.4em;
+}
+textarea {
+    resize: none;
+}
+#successMessage {
+    display: flex;
+    align-items: center;
+    height: 650px;
+    font-family: 'Myriad Web Pro';
+    color: var(--text-color-dark);
+    text-align: center;
+}
+#contactForm {
+}
+.service-second-block {
+    background-color: var(--blue-color);
+}
+.map-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 5%;
+    gap: 40px;
+    background-color: var(--pink-color);
+}
+.map-container h1 {
+    font-family: 'MyriadWebPro-Bold';
+}
+.map-iframe {
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px;
+    width: 800px;
+}
+@media (max-width: 992px) {
+    .form-main-container {
+        padding: 20px 5%;
+    } 
+    .form-item-container {
+        width: 350px;
+    }
+    .map-iframe {
+        width: 340px;
+    }
+}
