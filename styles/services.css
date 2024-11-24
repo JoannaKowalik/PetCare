@@ -1,0 +1,96 @@
+.services-title {
+    margin-top: 50px;
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+.service-package {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service-title {
+    color: var(--blue-color);
+    font-family: 'MyriadWebPro-Bold';
+    font-size: 28px;
+    margin-bottom: 1rem;
+}
+
+.price {
+    color: var(--text-color-dark);
+    font-family: 'Myriad Web Pro';
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.service-list li {
+    color: var(--text-color-dark);
+    font-family: 'Myriad Web Pro';
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+}
+
+.container-fluid {
+    padding: 0 5%;
+}
+
+.carousel {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 500px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-caption {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px 15px 15px;
+    text-align: center;
+}
+
+.carousel-caption h3 {
+    color: white;
+    margin: 0;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption p {
+    color: white;
+    margin: 5px 0 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    display: none;
+}

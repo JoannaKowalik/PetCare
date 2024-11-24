@@ -1,0 +1,19 @@
+.about-us-text-block {
+    text-align: justify;
+    line-height: 1.8;
+    padding: 0 20px;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 100px;
+}
+
+.about-us-title {
+    margin-top: 50px;
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+.about-us-img {
+    width: 100%;
+    height: auto;
+}
