@@ -21,7 +21,7 @@ fetch("navbar.html")
   .then((response) => response.text())
   .then((html) => {
     document.getElementById("navbar").innerHTML = html;
-    initializeNavbar(); 
+    initializeNavbar(); // Ensure navbar initialization
   })
   .catch((error) => {
     console.error("Error loading the navbar:", error);
