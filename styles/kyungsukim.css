@@ -1,0 +1,526 @@
+/* Primary style */
+@font-face {
+  font-family: 'Myriad Web Pro';
+  src: url('font/Myriad Web Pro.woff2') format('woff2'),
+    url('font/Myriad Web Pro.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Myriad', sans-serif;
+  color: #333;
+}
+
+.title-primary {
+  font-family: 'Myriad Web Pro';
+  font-size: 62px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.title-secondary {
+  font-family: 'Myriad Web Pro';
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+}
+
+.title-third {
+  font-family: 'Myriad Web Pro';
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+.phra-1 {
+  font-family: 'Myriad Web Pro';
+  font-size: 20px;
+  color: #333;
+}
+
+.phra-2 {
+  font-family: 'Myriad Web Pro';
+  font-size: 18px;
+  color: #333;
+}
+
+.py-5 {
+  padding-top: 7rem !important;
+  padding-bottom: 0rem !important;
+}
+
+.mb-5 {
+  margin-bottom: 7rem !important;
+}
+
+/* Donation CSS */
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+/* Banner style */
+.row.noGutter{
+  --bs-gutter-x: 0px;
+}
+
+.container.noGutter{
+  --bs-gutter-x: 0px;
+}
+
+.bg-pink.py-5 {
+  padding-top: 20px !important;
+  padding-bottom: 0px !important;
+}
+
+.bg-pink {
+  background-color: #fb989a;
+  color: #ffffff;
+  overflow: hidden;
+  padding: 5rem 0;
+}
+
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Donation style */
+section .container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.donation-section h2 {
+  font-weight: bold;
+  font-size: 52px;
+}
+
+.donation-text {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.donation-section p {
+  color: #333 !important;
+
+}
+
+.donation-info {
+  padding: 50px 100px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.donation-info img {
+  width: 50%;
+  padding-bottom: 1rem;
+}
+
+.donation-info p {
+  text-align: left;
+  padding-bottom: 2rem;
+}
+
+
+.donation-info ul {
+  padding-left: 0;
+  max-width: 80%;
+}
+
+.donation-info ul li {
+  margin-bottom: 4rem;
+}
+
+/* Card style */
+.card {
+  background-color: #3ef8e3;
+  border: none;
+  border-radius: 8px;
+  padding-top: 70px !important;
+  padding-bottom: 60px !important;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+
+.my-4 p.phra-1 {
+  color: #fff !important;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.text-center .display-5 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 64px;
+  font-weight: bold;
+  font-family: 'Myriad Web Pro';
+}
+
+.text-muted.d-block {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.icon-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon-group img {
+  width: 70%;
+  padding-top: 2rem;
+}
+
+/* Btn style */
+.btn-danger {
+  border-radius: 50px;
+  font-size: 18px;
+  font-family: 'Myriad Web Pro';
+  padding: 10px 40px 10px 40px;
+  border: none;
+  --bs-btn-bg: #f74157;
+  --bs-btn-border-color: none;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #f74157;
+  --bs-btn-hover-border-color: #f74157;
+  --bs-btn-focus-shadow-rgb: 225, 83, 97;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #f74157;
+  --bs-btn-active-border-color: #f74157;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #f74157;
+  --bs-btn-disabled-border-color: #f74157;
+}
+
+.btn-outline-primary {
+  --bs-btn-active-bg: #fcc300;
+  --bs-btn-hover-border-color: none;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary.active {
+  background-color: #fcc300;
+  color: #fff;
+  height: 4.5rem;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.donation-amount {
+  background-color: #01e0cb;
+  color: #fff;
+  height: 3.5rem;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.donation-amount:hover,
+.donation-amount:focus,
+.donation-amount.active {
+  background-color: #fff;
+  color: #01e0cb;
+  height: 3.5rem;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.btn-group .btn {
+  --bs-btn-bg: #fff;
+}
+
+.btn-group .btn-outline-primary {
+  --bs-btn-color: #01e0cb;
+  --bs-btn-border-color: rgba(255, 255, 255, 0.15);
+  --bs-btn-hover-color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.btn-warning {
+  font-family: 'Myriad Web Pro';
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+  --bs-btn-bg: #fcc300;
+  --bs-btn-border-color: none;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #fcc300;
+  --bs-btn-hover-border-color: none;
+  --bs-btn-focus-shadow-rgb: none;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #fcc300;
+  --bs-btn-active-border-color: none;
+  --bs-btn-active-shadow: none;
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #fcc300;
+  --bs-btn-disabled-border-color: none;
+}
+
+input.form-control {
+  border-radius: 8px;
+  height: 3.5rem;
+  font-size: 1.5rem;
+  text-align: end;
+  padding-right: 20px;
+  font-weight: bold;
+  font-family: 'Myriad Web Pro';
+  margin-top: 20px;
+}
+
+input.form-control:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.15);
+  /* border-color: #00bcd4;*/
+}
+
+/* Accordion */
+.accordion {
+  max-width: 100%;
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 7rem;
+  padding-top: 2rem;
+  --bs-accordion-btn-padding-x: 1.5rem;
+  --bs-accordion-btn-padding-y: 1.5rem;
+  --bs-accordion-bg: #f9f9f9;
+  --bs-accordion-btn-focus-border-color: rgba(255, 255, 255, 0.15) !important;
+  --bs-accordion-active-bg: rgba(255, 255, 255, 0.15);
+  --bs-accordion-btn-focus-box-shadow: rgba(255, 255, 255, 0.15) !important;
+  --bs-accordion-body-padding-x: 4rem;
+  --bs-accordion-body-padding-y: 1.5rem;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #333;
+  font-weight: bold;
+  font-size: 22px;
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+.accordion-item {
+  width: 100%;
+}
+
+.accordion-item .point {
+  color: #01e0cb;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+/* testimonial CSS */
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+/* Banner style */
+.bg-yellow.py-5 {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.bg-yellow {
+  background-color: #3ef8e3;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.carousel-inner.pb-5 {
+  padding-bottom: 0px !important;
+}
+.carousel {
+  position: relative;
+}
+
+.carousel-item {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: auto;
+  opacity: 1;
+}
+
+.carousel-dark .carousel-control-next-icon,
+.carousel-dark .carousel-control-prev-icon {
+  filter: none;
+}
+
+.carousel-inner.pb-5 img {
+  width: 350px;
+  aspect-ratio: auto 350 / 350;
+  height: 350px;
+  margin-left: 100px;
+  margin-right: 50px;
+  padding-bottom: 0px;
+  border: solid 10px #01e0cb;
+}
+
+.carousel-indicators {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.carousel-item p {
+  margin-bottom: 0px;
+}
+
+.carousel-item .title-primary {
+  margin-top: 20px;
+}
+/* Card style */
+.card.tsm {
+  background-color: white;
+  border: 1px solid #01e0cb !important;
+  border-radius: 8px;
+  padding: 0px 0px 0px 0px !important;
+}
+
+.card-body.p-xxl-5 {
+  padding: 2rem !important; 
+}
+
+.bsb-ratings.text-warning{
+  --bs-text-opacity: 1;
+  color:#f74157 !important;
+}
+
+.row.gy-3 {
+  padding-bottom: 7rem;
+}
+
+.step2 input.form-control {
+  border-radius: 5px;
+  height: 3rem;
+  font-size: 1rem;
+  text-align: end;
+  padding-right: 20px;
+  font-weight: bold;
+  font-family: 'Myriad Web Pro';
+  margin-top: 0px;
+}
+
+input.form-control:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.15);
+  /* border-color: #00bcd4;*/
+}
+
+.step2 .form-select {
+  font-family: 'Myriad Web Pro';
+  font-size: 1rem;
+  height: 3rem;
+  margin-top: 0px;
+  padding: 0em 0rem 0rem .75rem;
+}
+
+.step2 .input-group > .form-control {
+  flex: 6 1 auto; /* 7 parts of the space */
+}
+
+.step2 .input-group > .form-select {
+  flex: 4 1 auto; /* 3 parts of the space */
+}
+
+.cardDetails input{
+  width: 49%;
+}
+/* Media CSS */
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+/* Media style */
+@media (max-width: 768px) {
+  .bg-pink.py-5 {
+    padding-top: 30px !important;
+  }
+
+  .title-primary {
+    font-size: 32px;
+    white-space: wrap;
+  }
+
+  .title-secondary {
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+  .title-third {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .phra-1 {
+    font-size: 14px;
+  }
+
+  .phra-2 {
+    font-size: 12px;
+  }
+
+  .donation-section h2 {
+    font-size: 2rem;
+  }
+
+  .card {
+    padding: 2rem;
+  }
+
+  .hero-img {
+    max-width: 450px;
+  }
+
+  .donation-info {
+    padding-right: 0px;
+    padding-top: 0px;
+  }
+
+  .donation-info p {
+    text-align: center;
+  }
+
+  .carousel {
+    padding-top: 10px;
+    padding-bottom: 0px;
+  }
+
+  .carousel-item {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .carousel-inner.pb-5 img {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 30px;
+  }
+
+  .carousel-inner.pb-5 img {
+    width: 200px;
+    aspect-ratio: auto 200 / 200;
+    height: 200px;
+  }
+
+  .pb-5 {
+    padding-bottom: 1rem !important;
+  }
+}
