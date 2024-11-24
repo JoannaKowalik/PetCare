@@ -28,8 +28,26 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Datepicker - from https://codepen.io/vsfvjiuv-the-typescripter/pen/mdMeJwL
-$(document).ready(function () {
-  $("#datepicker").datepicker();
-});
-//Carousel
-$(".carousel").carousel();
+// $(document).ready(function () {
+//   $("#datepicker").datepicker();
+// });
+
+// Dynamically load navbar
+fetch("navbar.html")
+  .then((response) => response.text())
+  .then((html) => {
+    document.getElementById("navbar").innerHTML = html;
+  })
+  .catch((error) => {
+    console.error("Error loading the navbar:", error);
+  });
+
+// Dynamically load footer
+fetch("footer.html")
+  .then((response) => response.text())
+  .then((html) => {
+    document.getElementById("footer").innerHTML = html;
+  })
+  .catch((error) => {
+    console.error("Error loading the navbar:", error);
+  });

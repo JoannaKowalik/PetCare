@@ -11,6 +11,8 @@
     <link href="/styles/joanna.css" rel="stylesheet" />
   </head>
   <body>
+    <div id="navbar"></div>
+
     <div class="container mt-5">
       <div class="row g-3">
         <!-- Gallery Images -->
@@ -18,7 +20,7 @@
           <img
             src="https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?auto=compress&cs=tinysrgb&w=1600"
             class="img-fluid gallery-img"
-            alt="Image 1"
+            alt="Dog 1"
             data-index="0"
           />
         </div>
@@ -26,7 +28,7 @@
           <img
             src="https://images.pexels.com/photos/220938/pexels-photo-220938.jpeg?auto=compress&cs=tinysrgb&w=1600"
             class="img-fluid gallery-img"
-            alt="Image 2"
+            alt="Dog 2"
             data-index="1"
           />
         </div>
@@ -34,7 +36,7 @@
           <img
             src="https://images.pexels.com/photos/1490908/pexels-photo-1490908.jpeg?auto=compress&cs=tinysrgb&w=1600"
             class="img-fluid gallery-img"
-            alt="Image 3"
+            alt="Dog 3"
             data-index="2"
           />
         </div>
@@ -42,44 +44,45 @@
           <img
             src="https://images.pexels.com/photos/825949/pexels-photo-825949.jpeg?auto=compress&cs=tinysrgb&w=1600"
             class="img-fluid gallery-img"
-            alt="Image 3"
-            data-index="2"
+            alt="Dog 4"
+            data-index="3"
           />
         </div>
         <div class="col-md-4">
           <img
             src="https://images.pexels.com/photos/4681107/pexels-photo-4681107.jpeg?auto=compress&cs=tinysrgb&w=1600"
             class="img-fluid gallery-img"
-            alt="Image 3"
-            data-index="2"
+            alt="Dog 5"
+            data-index="4"
           />
         </div>
         <div class="col-md-4">
           <img
             src="https://images.pexels.com/photos/97082/weimaraner-puppy-dog-snout-97082.jpeg?auto=compress&cs=tinysrgb&w=1600"
             class="img-fluid gallery-img"
-            alt="Image 3"
-            data-index="2"
+            alt="Dog 6"
+            data-index="5"
           />
         </div>
         <div class="col-md-4">
           <img
             src="https://images.pexels.com/photos/3687770/pexels-photo-3687770.jpeg?auto=compress&cs=tinysrgb&w=1600"
             class="img-fluid gallery-img"
-            alt="Image 3"
-            data-index="2"
+            alt="Dog 7"
+            data-index="6"
           />
         </div>
         <div class="col-md-4">
           <img
             src="https://images.pexels.com/photos/825949/pexels-photo-825949.jpeg?auto=compress&cs=tinysrgb&w=1600"
             class="img-fluid gallery-img"
-            alt="Image 3"
-            data-index="2"
+            alt="Dog 8"
+            data-index="7"
           />
         </div>
       </div>
     </div>
+    <div id="footer"></div>
 
     <!-- Modal -->
     <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
@@ -105,8 +108,11 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/app.js"></script>
     <script>
       // JavaScript for Modal and Navigation
       const galleryImages = document.querySelectorAll(".gallery-img");
