@@ -17,3 +17,40 @@
     width: 100%;
     height: auto;
 }
+
+.about-banner {
+    background-color: #3ef8e3;
+}
+
+.about-banner-text {
+    padding-left: 50px;
+}
+
+.about-banner-title {
+    font-size: 72px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-family: 'Myriad Web Pro';
+    font-weight: bold;
+}
+
+.about-banner-subtitle {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: 'Myriad Web Pro';
+    font-weight: bold;
+}
+
+.about-banner-description {
+    max-width: 400px;
+    line-height: 1.6;
+    font-size: 20px;
+    font-family: 'Myriad Web Pro';
+}
+
+.about-banner-img {
+    width: 100%;
+    max-width: 600px;
+    transform: translateX(50px);
+    margin-top: -30px;
+}
