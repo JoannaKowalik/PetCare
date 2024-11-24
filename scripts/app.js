@@ -25,7 +25,11 @@ document.addEventListener("DOMContentLoaded", function () {
     successMessage.classList.remove("hidden");
     successMessageBlock.classList.remove("hidden");
   });
-}); // Datepicker - from https://codepen.io/vsfvjiuv-the-typescripter/pen/mdMeJwL
+});
+
+// Datepicker - from https://codepen.io/vsfvjiuv-the-typescripter/pen/mdMeJwL
 $(document).ready(function () {
   $("#datepicker").datepicker();
 });
+//Carousel
+$(".carousel").carousel();
