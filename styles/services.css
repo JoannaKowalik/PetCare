@@ -94,3 +94,7 @@
 .carousel-control-next {
     display: none;
 }
+
+.bg-yellow {
+    background-color: #FFB800;
+}
