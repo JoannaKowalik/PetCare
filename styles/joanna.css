@@ -1,32 +1,9 @@
-/* @import url("style.css");
-@import url("joanna.css"); */
-
-body {
-  /* font-family: "Myriad", sans-serif;
-  color: #333; */
-  background-color: red;
-}
+@import url("style.css");
 
 /* Gallery */
 .gallery-img {
   margin-bottom: 15px;
 }
-
-/* .container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 2%;
-  box-sizing: border-box;
-}
-
-.contents {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  gap: 1rem;
-}
-  */
 
 .column {
   display: flex;

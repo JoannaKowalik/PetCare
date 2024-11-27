@@ -8,11 +8,11 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link href="./styles/style.css " rel="stylesheet" />
+    <link href="./styles/style.css" rel="stylesheet" />
     <link href="./styles/booking.css" rel="stylesheet" />
   </head>
   <body>
-    <header><div id="navbar"></div></header>
+   <div id="navbar"></div>
     <main>
       
       <!-- Banner -->
@@ -34,7 +34,7 @@
                 class="col-lg-6 text-center text-lg-end d-flex justify-content-center justify-content-lg-end"
               >
                 <img
-                  src="images/img-grooming.png"
+                  src="images/img-dog-1.png"
                   alt="Happy dog"
                   class="img-fluid hero-img"
                 />
@@ -45,85 +45,99 @@
       <!-- Banner -->
 
       <!-- Content -->
-      <div class="container vh-200 py-5 ">
-        <div class="row">
+      <div class="container-fluid min-vh-100 d-flex justify-content-center align-items-center">
+        <div class="row w-100 justify-content-center">
 
         <!-- Service type pick -->
         <section
-         id="servicetype" class="mb-4">
-         <div class="container">
+         id="servicetype" class="col-10 mb-4">
+         <div class="card p-4" >
+          <div class="card-header">
               <h3>Choose a service:</h3>
-              <form id="service">
-                <input
-                  type="radio"
-                  class="btn-check"
-                  name="service"
-                  id="service1"
-                  autocomplete="off"
-                  checked/>
-                <label class="btn btn-secondary" for="service1"
-                  >Basic grooming</label>
-                <input
-                  type="radio"
-                  class="btn-check"
-                  name="service"
-                  id="service2"
-                  autocomplete="off"/>
-                <label class="btn btn-secondary" for="service2">Standard grooming</label>
-                <input
-                  type="radio"
-                  class="btn-check"
-                  name="service"
-                  id="service3"
-                  autocomplete="off"/>
-                <label class="btn btn-secondary" for="service3">Premium grooming</label>
-              </form>
-            </div>
+              </div>
+              <div class="card-body">
+                <form id="service">
+                  <div class="d-flex flex-row flex-nowrap gap-3">
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="service"
+                      id="service1"
+                      autocomplete="off"
+                      checked/>
+                    <label class="btn btn-secondary" for="service1"
+                      >Basic</label>
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="service"
+                      id="service2"
+                      autocomplete="off"/>
+                    <label class="btn btn-secondary" for="service2">Standard</label>
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="service"
+                      id="service3"
+                      autocomplete="off"/>
+                    <label class="btn btn-secondary" for="service3">Premium</label>
+                  </div>
+                </form>
+              </div>
+           </div>
         </section>
         <!-- Service type pick -->
 
         <!-- Dog size pick -->
         <section
-         class="mb-4">
-          <div class="container">
-            <h3>Dog size:</h3>
-            <form>
-              <input
-                type="radio"
-                class="btn-check"
-                name="size"
-                id="small"
-                autocomplete="off"
-                checked
-              />
-              <label class="btn btn-secondary" for="small">Small</label>
-              <input
-                type="radio"
-                class="btn-check"
-                name="size"
-                id="medium"
-                autocomplete="off"
-              />
-              <label class="btn btn-secondary" for="medium">Medium</label>
-              <input
-                type="radio"
-                class="btn-check"
-                name="size"
-                id="large"
-                autocomplete="off"
-              />
-              <label class="btn btn-secondary" for="large">Large</label>
-            </form>
+         class="col-10 mb-4">
+          <div class="card p-4">
+            <div class="card-header">
+              <h3>Dog size:</h3>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="d-flex flex-row flex-nowrap gap-3">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="size"
+                    id="small"
+                    autocomplete="off"
+                    checked
+                  />
+                  <label class="btn btn-secondary" for="small">Small</label>
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="size"
+                    id="medium"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-secondary" for="medium">Medium</label>
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="size"
+                    id="large"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-secondary" for="large">Large</label>
+                  </div>
+              </form>
+            </div>
           </div>
         </section>
         <!-- Dog size pick -->
 
         <!-- Location pick -->
         <section
-          class="mb-4">
-          <div class="container">
-            <div class="row">
+          class="col-10 mb-4">
+          <div class="card p-4">
+           <div class="card-header">
             <h3>Pick one of our locations:</h3>
+           </div>
+           <div class="card-body">
             <div class="form-check form-check-inline">
               <input
                 class="form-check-input"
@@ -164,34 +178,39 @@
               />
               <label class="form-check-label" for="donegal">Donegal</label>
             </div>
-            </div>
+           </div>
           </div>
         </section>
         <!-- Location pick -->
 
-        <!-- Date pick -->
+        <!-- Date & Time pick -->
         <section
-         class="mb-4">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <h3>Pick a date:</h3>
-                <form class="col">
-                  <label for="date" class="col-1 col-form-label">Date</label>
-                  <div class="col-5">
-                    <div class="input-group date" id="datepicker">
-                      <input type="text" class="form-control" id="date" />
-                      <span class="input-group-append">
-                        <span class="input-group-text bg-light d-block">
-                          <i class="fa fa-calendar"></i>
+         class="col-10 mb-4">
+          <div class="card p-4">
+            <div class="card-header"><h3>Pick date & time:</h3></div>
+            <div class="card-body">
+              <div class="row">
+                <!-- Date pick -->
+                <div class="col-md-7 mb-4">
+                  <form>
+                    <h5>Pick a date:</h5>
+                    <label for="date" class="col-form-label">Date</label>
+                    <div class="col-7">
+                      <div class="input-group date" id="datepicker">
+                        <input type="text" class="form-control" id="date" />
+                        <span class="input-group-append">
+                          <span class="input-group-text bg-light d-block">
+                            <i class="fa fa-calendar"></i>
+                          </span>
                         </span>
-                      </span>
+                      </div>
                     </div>
-                  </div>
-                </form>
-              </div>
-              <div class="col">
-                <h3>Pick time:</h3>
+                  </form>
+                </div>
+              
+              <!-- Time pick -->
+              <div class="col-md-3 mb-3">
+                <h5>Pick time:</h5>
                 <div class="form-check">
                     <input
                     class="form-check-input"
@@ -230,60 +249,46 @@
                   />
                   <label class="form-check-label" for="6PM"> 6 PM - 9 PM </label>
                 </div>
-
-
-
-
-
+            </div>
             </div>
           </div>
         </section
         >
         <!-- Date pick -->
 
-        <!-- Time pick  -->
-         <section
-          class="mb-4">
-          <div class="container">
-            <div class="row">
-              
-           </div>
-          
-        </section
-        >
-        <!-- Time pick  -->
-
-        <!-- Details input -->
-        <section
-         class="mb-4">
-          
-            <div class="col">
-              <h3>Your details:</h3>
-              <form class="form-floating" id="details">
-                <input type="text" class="form-control" id="firstname" />
-                <label for="floatingInputValue">Your first name</label>
-              </form>
-              <form class="form-floating">
-                <input type="text" class="form-control" id="lastname" />
-                <label for="floatingInputValue">Your last name</label>
-              </form>
-              <form class="form-floating">
-                <input type="tel" class="form-control" id="phone" />
-                <label for="floatingInputValue">Your phone number</label>
-              </form>
-              <form class="form-floating">
-                <input type="email" class="form-control" id="email" />
-                <label for="floatingInputValue">Your E-mail</label>
-              </form>
-              <button class="btn btn-secondary" type="submit" form="details">
-                Submit
-              </button>
-            </div>
-          </div>
-        </section
-        >
+          <!-- Details input -->
+          <section
+          class="col-10 mb-4">
+              <div class="card p-4">
+                <div class="card-header">
+                  <h3>Your details:</h3>
+                </div>
+                <div class="card-body">
+                  <form class="form-floating" id="details">
+                    <input type="text" class="form-control" id="firstname" />
+                    <label for="firstname">Your first name</label>
+                  </form>
+                  <form class="form-floating">
+                    <input type="text" class="form-control" id="lastname" />
+                    <label for="lastname">Your last name</label>
+                  </form>
+                  <form class="form-floating">
+                    <input type="tel" class="form-control" id="phone" />
+                    <label for="phone">Your phone number</label>
+                  </form>
+                  <form class="form-floating">
+                    <input type="email" class="form-control" id="email" />
+                    <label for="email">Your E-mail</label>
+                  </form>
+                  <button class="btn btn-secondary" type="submit" form="details">
+                    Submit
+                  </button>
+                </div>
+              </div>
+          </section>
         </div>
-        </div>
+      </div>
+ 
     <!-- Details input -->
 
     <div id="footer"></div>
