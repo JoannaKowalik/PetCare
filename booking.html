@@ -9,11 +9,11 @@
       rel="stylesheet"
     />
     <link href="./styles/style.css" rel="stylesheet" />
-    <link href="./styles/booking.css" rel="stylesheet" />
+    <link href="./styles/joanna.css" rel="stylesheet" />
   </head>
   <body>
    <div id="navbar"></div>
-    <main>
+    
       
       <!-- Banner -->
         <div class="bg-pink py-5">
@@ -264,7 +264,7 @@
                   <h3>Your details:</h3>
                 </div>
                 <div class="card-body">
-                  <form class="form-floating" id="details">
+                  <form class="form-floating" id="contactForm">
                     <input type="text" class="form-control" id="firstname" />
                     <label for="firstname">Your first name</label>
                   </form>
@@ -280,10 +280,13 @@
                     <input type="email" class="form-control" id="email" />
                     <label for="email">Your E-mail</label>
                   </form>
-                  <button class="btn btn-secondary" type="submit" form="details">
+                  <button class="btn btn-secondary" type="submit" form="contactForm">
                     Submit
                   </button>
                 </div>
+                 <div id="successMessageBlock" class="hidden">
+                    <h2 class="hidden" id="successMessage">Thank you! <br>We will contact you as soon as possible</h2>
+                  </div>
               </div>
           </section>
         </div>
