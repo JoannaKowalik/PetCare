@@ -96,7 +96,7 @@
               <h3>Dog size:</h3>
             </div>
             <div class="card-body">
-              <form>
+              <form id="dogsize">
                 <div class="d-flex flex-row flex-nowrap gap-3">
                   <input
                     type="radio"
@@ -138,46 +138,48 @@
             <h3>Pick one of our locations:</h3>
            </div>
            <div class="card-body">
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="location"
-                id="dublin"
-                value="dublin"
-              />
-              <label class="form-check-label" for="dublin">Dublin</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="location"
-                id="galway"
-                value="galway"
-              />
-              <label class="form-check-label" for="galway">Galway</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="location"
-                id="cork"
-                value="cork"
-              />
-              <label class="form-check-label" for="cork">Cork</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="location"
-                id="donegal"
-                value="donegal"
-              />
-              <label class="form-check-label" for="donegal">Donegal</label>
-            </div>
+            <form id="locationPick">
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="location"
+                  id="dublin"
+                  value="dublin"
+                />
+                <label class="form-check-label" for="dublin">Dublin</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="location"
+                  id="galway"
+                  value="galway"
+                />
+                <label class="form-check-label" for="galway">Galway</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="location"
+                  id="cork"
+                  value="cork"
+                />
+                <label class="form-check-label" for="cork">Cork</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="location"
+                  id="donegal"
+                  value="donegal"
+                />
+                <label class="form-check-label" for="donegal">Donegal</label>
+              </div>
+              </form>
            </div>
           </div>
         </section>
@@ -192,7 +194,7 @@
               <div class="row">
                 <!-- Date pick -->
                 <div class="col-md-7 mb-4">
-                  <form>
+                  <form id="datePick">
                     <h5>Pick a date:</h5>
                     <label for="date" class="col-form-label">Date</label>
                     <div class="col-7">
@@ -211,44 +213,46 @@
               <!-- Time pick -->
               <div class="col-md-3 mb-3">
                 <h5>Pick time:</h5>
-                <div class="form-check">
+                <form id="timePick">
+                  <div class="form-check">
+                      <input
+                      class="form-check-input"
+                      type="radio"
+                      name="picktime"
+                      id="9AM"
+                      />
+                      <label class="form-check-label" for="9AM"> 9 AM - 11 AM </label>
+                  </div>
+                  <div class="form-check">
                     <input
-                    class="form-check-input"
-                    type="radio"
-                    name="picktime"
-                    id="9AM"
+                      class="form-check-input"
+                      type="radio"
+                      name="picktime"
+                      id="12AM"
+                      checked
                     />
-                    <label class="form-check-label" for="9AM"> 9 AM - 11 AM </label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="picktime"
-                    id="12AM"
-                    checked
-                  />
-                  <label class="form-check-label" for="12AM"> 11 AM - 3 PM </label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="picktime"
-                    id="3PM"
-                  />
-                  <label class="form-check-label" for="3PM"> 3 PM - 6 PM </label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="picktime"
-                    id="6PM"
-                    checked
-                  />
-                  <label class="form-check-label" for="6PM"> 6 PM - 9 PM </label>
-                </div>
+                    <label class="form-check-label" for="12AM"> 11 AM - 3 PM </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="picktime"
+                      id="3PM"
+                    />
+                    <label class="form-check-label" for="3PM"> 3 PM - 6 PM </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="picktime"
+                      id="6PM"
+                      checked
+                    />
+                    <label class="form-check-label" for="6PM"> 6 PM - 9 PM </label>
+                  </div>
+                  </form>
             </div>
             </div>
           </div>
@@ -264,29 +268,53 @@
                   <h3>Your details:</h3>
                 </div>
                 <div class="card-body">
-                  <form class="form-floating" id="contactForm">
-                    <input type="text" class="form-control" id="firstname" />
+                  <form class="form-floating" id="details">
+                    <input type="text" class="form-control" id="firstname" required/>
                     <label for="firstname">Your first name</label>
                   </form>
                   <form class="form-floating">
-                    <input type="text" class="form-control" id="lastname" />
+                    <input type="text" class="form-control" id="lastname" required/>
                     <label for="lastname">Your last name</label>
                   </form>
                   <form class="form-floating">
-                    <input type="tel" class="form-control" id="phone" />
+                    <input type="tel" class="form-control" id="phone" required/>
                     <label for="phone">Your phone number</label>
                   </form>
                   <form class="form-floating">
-                    <input type="email" class="form-control" id="email" />
+                    <input type="email" class="form-control" id="email" required/>
                     <label for="email">Your E-mail</label>
                   </form>
-                  <button class="btn btn-secondary" type="submit" form="contactForm">
+                  <button class="btn btn-secondary" type="submit" form="details">
                     Submit
                   </button>
                 </div>
-                 <div id="successMessageBlock" class="hidden">
-                    <h2 class="hidden" id="successMessage">Thank you! <br>We will contact you as soon as possible</h2>
+               <!-- Modal -->
+                <div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="detailsModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="detailsModalLabel">Your Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p><strong>Service Type:</strong> <span id="modalService"></span></p>
+                         <p><strong>Dog Size:</strong> <span id="modalSize"></span></p>
+                         <p><strong>Location:</strong> <span id="modalLocation"></span></p>
+                          <p><strong>Date:</strong> <span id="modalDate"></span></p>
+                           <p><strong>Time:</strong> <span id="modalTime"></span></p>
+                        <p><strong>First Name:</strong> <span id="modalFirstname"></span></p>
+                        <p><strong>Last Name:</strong> <span id="modalLastname"></span></p>
+                        <p><strong>Phone Number:</strong> <span id="modalPhone"></span></p>
+                        <p><strong>Email:</strong> <span id="modalEmail"></span></p>
+                        <p><strong>Selected Time:</strong> <span id="modalPicktime"></span></p>
+                         <p><strong>Thank you for your booking!</strong></p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
                   </div>
+                </div>
               </div>
           </section>
         </div>
