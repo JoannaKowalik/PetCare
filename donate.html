@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Care Services</title>
+  <!--css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/kyungsukim.css">
+  <!--css-->
+</head>
+
+<body>
+  <!--header-->
+  <div id="navbar"></div>
+  <!--header-->
+
+  <!--contents-->
+  <div class="contents">
+    <!-- Banner Section -->
+    <div class="bg-pink py-5">
+      <div class="container noGutter">
+        <div class="row align-items-center noGutter">
+          <!-- text section -->
+          <div class="col-lg-6 text-lg-start text-center mb-4 mb-lg-0">
+            <h1 class="title-primary">Donate for Our Furry Friends</h1>
+            <p class="title-third">Transform Animal Lives with Your Support.</p>
+            <p class="phra-1">Your donation helps rescue, care for, and protect animals in need.<br /> Together, we can
+              make a lasting impact on their lives.</p>
+            <a href="#Learn"><button class="btn btn-danger mt-3">Learn more</button></a>
+          </div>
+          <!-- img section -->
+          <div class="col-lg-6 text-center text-lg-end d-flex justify-content-center justify-content-lg-end">
+            <img src="images/img-donation-dog.png" alt="Happy dog" class="img-fluid hero-img">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Donation Impact Section -->
+    <section class="donation-section py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h1 class="title-secondary">How your donation makes a difference</h1>
+          <p class="text-muted donation-text phra-1">
+            It is your donation that enables us to actively keep campaigning for animals in need and improving animal
+            welfare standards worldwide. Specifically, you can see how your donation contributes towards the betterment
+            and welfare of animals below.
+          </p>
+        </div>
+        <div class="row align-items-start">
+          <!-- Donation Details -->
+          <div class="col-lg-6 mb-4" id="Learn">
+            <div class="donation-info">
+              <img src="./images/logo/ngoLogo.png" alt="Best Friends Animal Society" class="img-fluid mb-3" />
+              <p class="phra-1">Your donation will go to <strong>Best Friends Save Animal Society</strong>.<br />All,
+                supporting
+                crucial animal rescue efforts to give every pet a second chance.</p>
+              <ul class="list-unstyled phra-2">
+                <li><strong class="title-third ">When you donate €25</strong><br />You can provide food, toys, and
+                  treats for rescued animals
+                  to help them feel safe and loved.</li>
+                <li><strong class="title-third ">When you donate €50</strong><br />You can provide vaccines for up to
+                  five Community Cats -
+                  feral, stray, and friendly cats living outdoors.</li>
+                <li><strong class="title-third ">When you donate €100</strong><br />You can provide a shelter dog with
+                  special enrichment
+                  while they wait for their new home.</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Donation Form -->
+          <div id="donation-form-step-1" class="form-step col-lg-6">
+            <div class="card p-4 shadow-sm">
+              <div class="btn-group w-100" role="group">
+                <button class="btn btn-outline-primary active" id="single-donation">Single</button>
+                <button class="btn btn-outline-primary" id="monthly-donation">Monthly</button>
+              </div>
+              <div class="text-center my-4">
+                <p class="phra-1">How much do you want to donate?</p>
+                <h3 class="display-5">€25</h3>
+              </div>
+              <div class="btn-group w-100 mb-3" role="group">
+                <button type="button" class="btn btn-outline-primary donation-amount active">€25</button>
+                <button type="button" class="btn btn-outline-primary donation-amount">€50</button>
+                <button type="button" class="btn btn-outline-primary donation-amount">€100</button>
+              </div>
+              <input type="number" class="form-control mb-3" placeholder="Or enter your own amount" />
+              <small class="text-muted d-block mb-3 phra-2 ">
+                Did you know? If you donate €250 or more to Best Friends Animal Society in any one year, we can claim
+                tax relief on your gift, increasing its value by 45% to us at no extra cost to you.
+              </small>
+              <button class="btn btn-warning text-white w-50 nav-link-last-item">Next</button>
+              <div class="icon-group">
+                <img src="./images/icons/icon-payment.png" alt="payment method" class="img-fluid mb-3" />
+              </div>
+            </div>
+          </div>
+          <!-- Donation Form: Step 2 -->
+          <div id="donation-form-step-2" class="form-step col-lg-6 d-none">
+            <div class="card p-4 shadow-sm step2">
+              <!-- Your Details Section -->
+              <div class="mb-4 text-center">
+                <h4 class="fw-bold">Your details</h4>
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="First name" />
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Last name" />
+              </div>
+              <div class="mb-3">
+                <div class="input-group">
+                  <input type="email" class="form-control" placeholder="Email" />
+                  <select class="form-select">
+                    <option value="@gmail.com">@gmail.com</option>
+                    <option value="@yahoo.com">@yahoo.com</option>
+                    <option value="@hotmail.com">@hotmail.com</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mb-3">
+                <input type="tel" id="phone-number" class="form-control" placeholder="Phone (Optional)" maxlength="14" />
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Address" />
+              </div>
+              <!-- Your Card Details Section -->
+              <div class="mb-4 text-center mt-4">
+                <h4 class="fw-bold">Your card details</h4>
+              </div>
+              <div class="mb-3">
+                <input type="text" id="card-number" class="form-control" placeholder="Card number" maxlength="19" />
+              </div>
+              <div class="mb-3 d-flex justify-content-between cardDetails">
+                <input type="text" id="expiry-date" class="form-control" placeholder="Expiry date" maxlength="5" />
+                <input type="password" id="security-code" class="form-control" maxlength="3" placeholder="Security code" />
+              </div>
+              <!-- Donate Button and Payment Icons -->
+              <div class="text-center mt-4">
+                <button class="btn btn-warning text-white w-50 nav-link-last-item">Donate Now</button>
+                <div class="icon-group">
+                  <img src="./images/icons/icon-payment.png" alt="payment method" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Accordion -->
+    <section>
+      <div class="container">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed phra-1" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <span class="point">Q. &nbsp;</span>How is my donation used, and what percentage goes to animal care?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body phra-2">Your donation directly supports animal rescue and care efforts.
+                Typically, 80-90% is allocated to animal care, including medical treatment, food, shelter,
+                and rescue operations. The remaining 10-20% supports operational costs like staff and outreach.
+                Transparency is our priority, and we’re happy to provide detailed reports on how your contributions make
+                a difference!</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed phra-1" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <span class="point">Q. &nbsp;</span> Can I choose a specific area for my donation, like medical care or
+                shelter needs?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body phra-2">Yes, you can choose to allocate your donation to specific areas such as
+                medical care, shelter needs,
+                or rescue operations. Simply let us know your preference when donating, and we’ll ensure your
+                contribution is used accordingly.
+                Thank you for supporting animals in need!</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed phra-1" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <span class="point">Q. &nbsp;</span> Do you offer recurring donations, and are there updates on the
+                animals?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body phra-2">Yes, we offer recurring donation options, allowing you to provide
+                consistent support for our animal rescue efforts.
+                As a recurring donor, you'll receive regular updates on the animals you've helped, including stories of
+                their recovery and adoption.
+                This keeps you connected to the impact of your generosity and the lives you've touched.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed phra-1" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                <span class="point">Q. &nbsp;</span> Will I get any reports on the impact of my donation?
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body phra-2">Yes, we provide detailed reports to show the impact of your donation.
+                These include updates on rescued animals, medical treatments provided, and shelter improvements.
+                You'll see exactly how your contribution helps save and improve lives.
+                Transparency and gratitude are our priorities!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--contents-->
+
+  <!--footer-->
+  <div id="footer"></div>
+  <!--footer-->
+
+  <!--Script-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./scripts/app.js"></script>
+  <script src="./scripts/kyungsukim.js"></script>
+  <!--Script-->
+</body>
+
+</html>
