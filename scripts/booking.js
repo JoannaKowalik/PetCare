@@ -4,7 +4,6 @@ $(document).ready(function () {
 });
 
 // Booking form
-
 document.addEventListener("DOMContentLoaded", function () {
   const contactForm = document.querySelector("#details");
   const modal = new bootstrap.Modal(document.getElementById("detailsModal"));
@@ -40,8 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
       ? document.querySelector("input[name='picktime']:checked")
           .nextElementSibling.textContent
       : "Not selected";
-    // Gather form values
 
+    // Form values
     const firstName = document.getElementById("firstname").value;
     const lastName = document.getElementById("lastname").value;
     const phone = document.getElementById("phone").value;
