@@ -202,3 +202,26 @@ body {
 .input-group-append {
   cursor: pointer;
 }
+
+
+.banner-title {
+  font-size: 72px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.banner-description {
+  max-width: 400px;
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+.banner-subtitle {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+
