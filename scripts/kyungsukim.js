@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Button toggle
+    // button toggle
     const singleButton = document.getElementById("single-donation");
     const monthlyButton = document.getElementById("monthly-donation");
 
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         singleButton.classList.remove("active");
     });
 
-    // Donation amount button
+    // bonation amount button
     const donationAmountButtons = document.querySelectorAll(".donation-amount");
     const donationInput = document.querySelector("input.form-control");
     const amountDisplay = document.querySelector(".display-5");
@@ -40,20 +40,20 @@ document.addEventListener("DOMContentLoaded", function () {
         donationAmountButtons.forEach((btn) => btn.classList.remove("active"));
     });
 
-    // Form switching next button click
+    // form switching next button click
     const nextButton = document.querySelector(".btn-warning.nav-link-last-item");
     const formStep1 = document.getElementById("donation-form-step-1");
     const formStep2 = document.getElementById("donation-form-step-2");
 
     nextButton.addEventListener("click", function () {
-        // Hide first form
+        // hide first form
         formStep1.classList.add("d-none");
-        // Hide second form
+        // hide second form
         formStep2.classList.remove("d-none");
     });
 });
 
-//Phone number
+//phone number
 document.getElementById("phone-number").addEventListener("input", function (e) {
     let input = e.target.value.replace(/\D/g, "");
     let formatted = "";
@@ -71,7 +71,7 @@ document.getElementById("phone-number").addEventListener("input", function (e) {
     e.target.value = formatted;
 });
 
-// Card expired date
+// card expired date
 document.getElementById("card-number").addEventListener("input", function (e) {
     let input = e.target.value.replace(/\D/g, "");
     let formatted = input.match(/.{1,4}/g)?.join(" ") || "";
@@ -92,7 +92,7 @@ document.getElementById("expiry-date").addEventListener("input", function (e) {
     e.target.value = formatted;
 });
 
-//Security code
+//security code
 const securityCode = document.getElementById("security-code");
 const toggleCvv = document.getElementById("toggle-cvv");
 
