@@ -4,7 +4,6 @@ $(document).ready(function () {
 });
 
 // Booking form
-
 document.addEventListener("DOMContentLoaded", function () {
   const contactForm = document.querySelector("#details");
   const modal = new bootstrap.Modal(document.getElementById("detailsModal"));
@@ -12,36 +11,14 @@ document.addEventListener("DOMContentLoaded", function () {
   contactForm.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    // Fetching the service type (radio button)
-    const serviceType = document.querySelector("input[name='service']:checked")
-      ? document.querySelector("input[name='service']:checked")
-          .nextElementSibling.textContent
-      : "Not selected";
+    // Fetching the radio button inputs
+    const serviceType = $("#service input:radio:checked").val();
+    const dogSize = $("#dogsize input:radio:checked").val();
+    const locationPick = $("#locationPick input:radio:checked").val();
+    const timePick = $("#timePick input:radio:checked").val();
 
-    // Fetching the dog size (radio button)
-    const dogSize = document.querySelector("input[name='size']:checked")
-      ? document.querySelector("input[name='size']:checked").nextElementSibling
-          .textContent
-      : "Not selected";
-
-    // Fetching the location (radio button)
-    const locationPick = document.querySelector(
-      "input[name='location']:checked"
-    )
-      ? document.querySelector("input[name='location']:checked")
-          .nextElementSibling.textContent
-      : "Not selected";
-
-    // Fetching the date
+    // Form values
     const datePick = document.getElementById("date").value || "Not selected";
-
-    // Fetching the time slot (radio button)
-    const timePick = document.querySelector("input[name='picktime']:checked")
-      ? document.querySelector("input[name='picktime']:checked")
-          .nextElementSibling.textContent
-      : "Not selected";
-    // Gather form values
-
     const firstName = document.getElementById("firstname").value;
     const lastName = document.getElementById("lastname").value;
     const phone = document.getElementById("phone").value;

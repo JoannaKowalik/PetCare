@@ -3,7 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Booking page for a pet grooming service Pawfect. Booking platform to reserve an appointment for a wash and pamper for your dog."
+    />
+    <meta
+      name="keywords"
+      content="pet care, pet grooming, animal care, booking form, appointment, date pick, time pick, dog wash, puppy pamper, claw clipping"
+    />
+    <meta name="author" content="Pawfect Team" />
     <title>Booking</title>
+    <link rel="icon" href="./images/icons/icon-paw.png" type="image/x-icon">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,8 +23,6 @@
   </head>
   <body>
    <div id="navbar"></div>
-    
-      
       <!-- Banner -->
         <div class="bg-pink py-5">
           <div class="container noGutter">
@@ -34,7 +42,7 @@
                 class="col-lg-6 text-center text-lg-end d-flex justify-content-center justify-content-lg-end"
               >
                 <img
-                  src="images/img-dog-1.png"
+                  src="images/img-dog-1.webp"
                   alt="Happy dog"
                   class="img-fluid hero-img"
                 />
@@ -43,291 +51,302 @@
           </div>
         </div>
       <!-- Banner -->
-
       <!-- Content -->
       <div class="container-fluid min-vh-100 d-flex justify-content-center align-items-center">
         <div class="row w-100 justify-content-center">
-
-        <!-- Service type pick -->
-        <section
-         id="servicetype" class="col-10 mb-4">
-         <div class="card p-4" >
-          <div class="card-header">
-              <h3>Choose a service:</h3>
+          <!-- Service type pick -->
+          <section
+          id="servicetype" class="col-10 mb-4">
+          <div class="card p-4" >
+            <div class="card-header">
+                <h3>Choose a service:</h3>
+                </div>
+                <div class="card-body">
+                  <form id="service">
+                    <div class="d-flex flex-row flex-nowrap gap-3">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="service"
+                        id="service1"
+                        autocomplete="off"
+                        value="Basic"
+                        checked/>
+                      <label class="btn btn-secondary" for="service1"
+                        >Basic</label>
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="service"
+                        id="service2"
+                        autocomplete="off"
+                        value="Standard"/>
+                      <label class="btn btn-secondary" for="service2">Standard</label>
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="service"
+                        id="service3"
+                        autocomplete="off"
+                        value="Premium"/>
+                      <label class="btn btn-secondary" for="service3">Premium</label>
+                    </div>
+                  </form>
+                </div>
+            </div>
+          </section>
+          <!-- Service type pick -->
+          <!-- Dog size pick -->
+          <section
+          class="col-10 mb-4">
+            <div class="card p-4">
+              <div class="card-header">
+                <h3>Dog size:</h3>
               </div>
               <div class="card-body">
-                <form id="service">
+                <form id="dogsize">
                   <div class="d-flex flex-row flex-nowrap gap-3">
                     <input
                       type="radio"
                       class="btn-check"
-                      name="service"
-                      id="service1"
+                      name="size"
+                      id="small"
                       autocomplete="off"
-                      checked/>
-                    <label class="btn btn-secondary" for="service1"
-                      >Basic</label>
+                      value="Small"
+                      checked
+                    />
+                    <label class="btn btn-secondary" for="small">Small</label>
                     <input
                       type="radio"
                       class="btn-check"
-                      name="service"
-                      id="service2"
-                      autocomplete="off"/>
-                    <label class="btn btn-secondary" for="service2">Standard</label>
+                      name="size"
+                      id="medium"
+                      autocomplete="off"
+                      value="Medium"
+                    />
+                    <label class="btn btn-secondary" for="medium">Medium</label>
                     <input
                       type="radio"
                       class="btn-check"
-                      name="service"
-                      id="service3"
-                      autocomplete="off"/>
-                    <label class="btn btn-secondary" for="service3">Premium</label>
-                  </div>
+                      name="size"
+                      id="large"
+                      autocomplete="off"
+                      value="Large"
+                    />
+                    <label class="btn btn-secondary" for="large">Large</label>
+                    </div>
                 </form>
               </div>
-           </div>
-        </section>
-        <!-- Service type pick -->
-
-        <!-- Dog size pick -->
-        <section
-         class="col-10 mb-4">
-          <div class="card p-4">
+            </div>
+          </section>
+          <!-- Dog size pick -->
+          <!-- Location pick -->
+          <section
+            class="col-10 mb-4">
+            <div class="card p-4">
             <div class="card-header">
-              <h3>Dog size:</h3>
+              <h3>Pick one of our locations:</h3>
             </div>
             <div class="card-body">
-              <form id="dogsize">
-                <div class="d-flex flex-row flex-nowrap gap-3">
+              <form id="locationPick">
+                <div class="form-check form-check-inline">
                   <input
+                    class="form-check-input"
                     type="radio"
-                    class="btn-check"
-                    name="size"
-                    id="small"
-                    autocomplete="off"
-                    checked
+                    name="location"
+                    id="dublin"
+                    value="Dublin"
                   />
-                  <label class="btn btn-secondary" for="small">Small</label>
-                  <input
-                    type="radio"
-                    class="btn-check"
-                    name="size"
-                    id="medium"
-                    autocomplete="off"
-                  />
-                  <label class="btn btn-secondary" for="medium">Medium</label>
-                  <input
-                    type="radio"
-                    class="btn-check"
-                    name="size"
-                    id="large"
-                    autocomplete="off"
-                  />
-                  <label class="btn btn-secondary" for="large">Large</label>
-                  </div>
-              </form>
-            </div>
-          </div>
-        </section>
-        <!-- Dog size pick -->
-
-        <!-- Location pick -->
-        <section
-          class="col-10 mb-4">
-          <div class="card p-4">
-           <div class="card-header">
-            <h3>Pick one of our locations:</h3>
-           </div>
-           <div class="card-body">
-            <form id="locationPick">
-              <div class="form-check form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="location"
-                  id="dublin"
-                  value="dublin"
-                />
-                <label class="form-check-label" for="dublin">Dublin</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="location"
-                  id="galway"
-                  value="galway"
-                />
-                <label class="form-check-label" for="galway">Galway</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="location"
-                  id="cork"
-                  value="cork"
-                />
-                <label class="form-check-label" for="cork">Cork</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="location"
-                  id="donegal"
-                  value="donegal"
-                />
-                <label class="form-check-label" for="donegal">Donegal</label>
-              </div>
-              </form>
-           </div>
-          </div>
-        </section>
-        <!-- Location pick -->
-
-        <!-- Date & Time pick -->
-        <section
-         class="col-10 mb-4">
-          <div class="card p-4">
-            <div class="card-header"><h3>Pick date & time:</h3></div>
-            <div class="card-body">
-              <div class="row">
-                <!-- Date pick -->
-                <div class="col-md-7 mb-4">
-                  <form id="datePick">
-                    <h5>Pick a date:</h5>
-                    <label for="date" class="col-form-label">Date</label>
-                    <div class="col-7">
-                      <div class="input-group date" id="datepicker">
-                        <input type="text" class="form-control" id="date" />
-                        <span class="input-group-append">
-                          <span class="input-group-text bg-light d-block">
-                            <i class="fa fa-calendar"></i>
-                          </span>
-                        </span>
-                      </div>
-                    </div>
-                  </form>
+                  <label class="form-check-label" for="dublin">Dublin</label>
                 </div>
-              
-              <!-- Time pick -->
-              <div class="col-md-3 mb-3">
-                <h5>Pick time:</h5>
-                <form id="timePick">
-                  <div class="form-check">
-                      <input
-                      class="form-check-input"
-                      type="radio"
-                      name="picktime"
-                      id="9AM"
-                      />
-                      <label class="form-check-label" for="9AM"> 9 AM - 11 AM </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="picktime"
-                      id="12AM"
-                      checked
-                    />
-                    <label class="form-check-label" for="12AM"> 11 AM - 3 PM </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="picktime"
-                      id="3PM"
-                    />
-                    <label class="form-check-label" for="3PM"> 3 PM - 6 PM </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="picktime"
-                      id="6PM"
-                      checked
-                    />
-                    <label class="form-check-label" for="6PM"> 6 PM - 9 PM </label>
-                  </div>
-                  </form>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="location"
+                    id="galway"
+                    value="Galway"
+                  />
+                  <label class="form-check-label" for="galway">Galway</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="location"
+                    id="cork"
+                    value="Cork"
+                  />
+                  <label class="form-check-label" for="cork">Cork</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="location"
+                    id="donegal"
+                    value="Donegal"
+                  />
+                  <label class="form-check-label" for="donegal">Donegal</label>
+                </div>
+                </form>
             </div>
             </div>
-          </div>
-        </section
-        >
-        <!-- Date pick -->
-
-          <!-- Details input -->
+          </section>
+          <!-- Location pick -->
+          <!-- Date & Time pick -->
           <section
           class="col-10 mb-4">
-              <div class="card p-4">
-                <div class="card-header">
-                  <h3>Your details:</h3>
-                </div>
-                <div class="card-body">
-                  <form class="form-floating" id="details">
-                    <input type="text" class="form-control" id="firstname" required/>
-                    <label for="firstname">Your first name</label>
-                  </form>
-                  <form class="form-floating">
-                    <input type="text" class="form-control" id="lastname" required/>
-                    <label for="lastname">Your last name</label>
-                  </form>
-                  <form class="form-floating">
-                    <input type="tel" class="form-control" id="phone" required/>
-                    <label for="phone">Your phone number</label>
-                  </form>
-                  <form class="form-floating">
-                    <input type="email" class="form-control" id="email" required/>
-                    <label for="email">Your E-mail</label>
-                  </form>
-                  <button class="btn btn-secondary" type="submit" form="details">
-                    Submit
-                  </button>
-                </div>
-               <!-- Modal -->
-                <div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="detailsModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="detailsModalLabel">Your Details</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="card p-4">
+              <div class="card-header"><h3>Pick date & time:</h3></div>
+              <div class="card-body">
+                <div class="row">
+                  <!-- Date pick -->
+                  <div class="col-md-7 mb-4">
+                    <form id="datePick">
+                      <h5>Pick a date:</h5>
+                      <label for="date" class="col-form-label">Date</label>
+                      <div class="col-7">
+                        <div class="input-group date" id="datepicker">
+                          <input type="text" class="form-control" id="date" />
+                          <span class="input-group-append">
+                            <span class="input-group-text bg-light d-block">
+                              <i class="fa fa-calendar"></i>
+                            </span>
+                          </span>
+                        </div>
                       </div>
-                      <div class="modal-body">
-                        <p><strong>Service Type:</strong> <span id="modalService"></span></p>
-                         <p><strong>Dog Size:</strong> <span id="modalSize"></span></p>
-                         <p><strong>Location:</strong> <span id="modalLocation"></span></p>
-                          <p><strong>Date:</strong> <span id="modalDate"></span></p>
-                           <p><strong>Time:</strong> <span id="modalTime"></span></p>
-                        <p><strong>First Name:</strong> <span id="modalFirstname"></span></p>
-                        <p><strong>Last Name:</strong> <span id="modalLastname"></span></p>
-                        <p><strong>Phone Number:</strong> <span id="modalPhone"></span></p>
-                        <p><strong>Email:</strong> <span id="modalEmail"></span></p>
-                        <p><strong>Selected Time:</strong> <span id="modalPicktime"></span></p>
-                         <p><strong>Thank you for your booking!</strong></p>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                    </form>
+                  </div>
+                <!-- Time pick -->
+                <div class="col-md-3 mb-3">
+                  <h5>Pick time:</h5>
+                  <form id="timePick">
+                    <div class="form-check">
+                        <input
+                        class="form-check-input"
+                        type="radio"
+                        name="picktime"
+                        id="9AM"
+                        value="9 AM - 11 AM"
+                        />
+                        <label class="form-check-label" for="9AM"> 9 AM - 11 AM </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="picktime"
+                        id="12AM"
+                        checked
+                        value="11 AM - 3 PM"
+                      />
+                      <label class="form-check-label" for="12AM"> 11 AM - 3 PM </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="picktime"
+                        id="3PM"
+                        value="3 PM - 6 PM"
+                      />
+                      <label class="form-check-label" for="3PM"> 3 PM - 6 PM </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="picktime"
+                        id="6PM"
+                        value="6 PM - 9 PM"
+                      />
+                      <label class="form-check-label" for="6PM"> 6 PM - 9 PM </label>
+                    </div>
+                    </form>
+              </div>
+              </div>
+            </div>
+          </section
+          >
+          <!-- Date pick -->
+            <!-- Details input -->
+          <section
+            class="col-10 mb-4">
+                <div class="card p-4">
+                  <div class="card-header">
+                    <h3>Your details:</h3>
+                  </div>
+                  <div class="card-body">
+                    <form class="form-floating" id="details">
+                      <input type="text" class="form-control" id="firstname" required/>
+                      <label for="firstname">Your first name</label>
+                    </form>
+                    <form class="form-floating">
+                      <input type="text" class="form-control" id="lastname" required/>
+                      <label for="lastname">Your last name</label>
+                    </form>
+                    <form class="form-floating">
+                      <input type="tel" class="form-control" id="phone" required/>
+                      <label for="phone">Your phone number</label>
+                    </form>
+                    <form class="form-floating">
+                      <input type="email" class="form-control" id="email" required/>
+                      <label for="email">Your E-mail</label>
+                    </form>
+                    <button class="btn btn-secondary" type="submit" form="details">
+                      Submit
+                    </button>
+                  </div>
+                <!-- Modal -->
+                  <div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="detailsModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="detailsModalLabel">Your Details</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p><strong>Service Type:</strong> <span id="modalService"></span></p>
+                          <p><strong>Dog Size:</strong> <span id="modalSize"></span></p>
+                          <p><strong>Location:</strong> <span id="modalLocation"></span></p>
+                            <p><strong>Date:</strong> <span id="modalDate"></span></p>
+                            <p><strong>Time:</strong> <span id="modalTime"></span></p>
+                          <p><strong>First Name:</strong> <span id="modalFirstname"></span></p>
+                          <p><strong>Last Name:</strong> <span id="modalLastname"></span></p>
+                          <p><strong>Phone Number:</strong> <span id="modalPhone"></span></p>
+                          <p><strong>Email:</strong> <span id="modalEmail"></span></p>
+                          <p><strong>Selected Time:</strong> <span id="modalPicktime"></span></p>
+                          <p><strong>Thank you for your booking!</strong></p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
+          </section>
+          <!-- Details input -->
+          <!-- Call for action -->
+          <section class="col-10 mb-4">
+              <div class="card donate-action justify-content-center align-items-center"> 
+                <h3>Consider donating to our furry friends!</h3>
+                <a class="nav-link" href="./donate.html">
+                <button type="button" class="btn btn-danger">Donate</button></a>
               </div>
           </section>
-        </div>
+          <!-- Call for action -->
+        </div> 
       </div>
- 
-    <!-- Details input -->
-
-    <div id="footer"></div>
     <!-- Content -->
-
+    <div id="footer"></div>
     <!-- Scripts -->
+    <!-- JQuery for datepicker -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap datepicker -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <!-- Calendar icon -->
     <script
       src="https://kit.fontawesome.com/cb31504f86.js"
       crossorigin="anonymous"
