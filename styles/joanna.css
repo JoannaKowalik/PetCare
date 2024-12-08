@@ -112,3 +112,12 @@
 }
 
 /* Booking */
+
+/* Booking */
+.donate-action {
+  height: 400px;
+  background-image: url("../images/img-cat-1.png");
+  background-size: cover;
+  background-position: center;
+  background-color: #fcc300;
+}
