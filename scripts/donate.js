@@ -1,3 +1,4 @@
+// worked by Kungsu Kim //
 document.addEventListener("DOMContentLoaded", function () {
     // button toggle
     const singleButton = document.getElementById("single-donation");
