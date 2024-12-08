@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Button Toggle Functionality
+    // button toggle
     const singleButton = document.getElementById("single-donation");
     const monthlyButton = document.getElementById("monthly-donation");
 
@@ -13,60 +13,49 @@ document.addEventListener("DOMContentLoaded", function () {
         singleButton.classList.remove("active");
     });
 
-    // Donation Amount Button Click Functionality
+    // bonation amount button
     const donationAmountButtons = document.querySelectorAll(".donation-amount");
     const donationInput = document.querySelector("input.form-control");
     const amountDisplay = document.querySelector(".display-5");
 
     donationAmountButtons.forEach((button) => {
         button.addEventListener("click", function () {
-            // Remove the active state from all buttons
             donationAmountButtons.forEach((btn) => btn.classList.remove("active"));
-
-            // Set the selected button to the active state
             button.classList.add("active");
-
-            // update the displayed amount at the top with the selected button's amount
             const amount = button.textContent.trim(); // €25
             amountDisplay.textContent = amount;
-
-            // reflect the same amount in the input field
-            const numericValue = amount.replace("€", "").trim(); // numbers only
+            const numericValue = amount.replace("€", "").trim();
             donationInput.value = numericValue;
         });
     });
 
-    // Update the displayed amount at the top when the input field value changes
     donationInput.addEventListener("input", function () {
         const inputAmount = donationInput.value;
 
-        // Display the default value if the input field is empty or contains a negative number
         if (inputAmount === "" || parseFloat(inputAmount) <= 0) {
             amountDisplay.textContent = "€0";
         } else {
             amountDisplay.textContent = `€${inputAmount}`;
         }
-
-        // Deactivate the active state of all amount buttons
         donationAmountButtons.forEach((btn) => btn.classList.remove("active"));
     });
 
-    // Form switching functionality on the Next button click
+    // form switching next button click
     const nextButton = document.querySelector(".btn-warning.nav-link-last-item");
     const formStep1 = document.getElementById("donation-form-step-1");
     const formStep2 = document.getElementById("donation-form-step-2");
 
     nextButton.addEventListener("click", function () {
-        // Hide the first form
+        // hide first form
         formStep1.classList.add("d-none");
-        // Hide the Second form
+        // hide second form
         formStep2.classList.remove("d-none");
     });
 });
 
-//Phone number input
+//phone number
 document.getElementById("phone-number").addEventListener("input", function (e) {
-    let input = e.target.value.replace(/\D/g, ""); // Remove non-numeric characters
+    let input = e.target.value.replace(/\D/g, "");
     let formatted = "";
 
     if (input.length > 0) {
@@ -79,32 +68,31 @@ document.getElementById("phone-number").addEventListener("input", function (e) {
         formatted += "-" + input.substring(6, 10);
     }
 
-    e.target.value = formatted; // Set the formatted value
+    e.target.value = formatted;
 });
 
-
-// Expired date
+// card expired date
 document.getElementById("card-number").addEventListener("input", function (e) {
-    let input = e.target.value.replace(/\D/g, ""); // Remove non-numeric characters
-    let formatted = input.match(/.{1,4}/g)?.join(" ") || ""; // Group into 4s and join with spaces
-    e.target.value = formatted; // Set the formatted value
+    let input = e.target.value.replace(/\D/g, "");
+    let formatted = input.match(/.{1,4}/g)?.join(" ") || "";
+    e.target.value = formatted; 
 });
 
 document.getElementById("expiry-date").addEventListener("input", function (e) {
-    let input = e.target.value.replace(/\D/g, ""); // Remove non-numeric characters
+    let input = e.target.value.replace(/\D/g, "");
     let formatted = "";
 
     if (input.length > 0) {
-        formatted = input.substring(0, 2); // Get the first two digits
+        formatted = input.substring(0, 2);
     }
     if (input.length >= 3) {
-        formatted += "/" + input.substring(2, 4); // Add slash and next two digits
+        formatted += "/" + input.substring(2, 4);
     }
 
-    e.target.value = formatted; // Set the formatted value
+    e.target.value = formatted;
 });
 
-//Security code input
+//security code
 const securityCode = document.getElementById("security-code");
 const toggleCvv = document.getElementById("toggle-cvv");
 
